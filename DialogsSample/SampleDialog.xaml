@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<extra:DialogView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:extra="clr-namespace:AiForms.Dialogs.Abstractions;assembly=AiForms.Dialogs.Abstractions"
+    x:Class="DialogsSample.SampleDialog"
+    OverlayColor="#80000000" IsCanceledOnTouchOutside="True"
+    VerticalLayoutAlignment="Center" HorizontalLayoutAlignment="Center"
+    WidthRequest="250" BackgroundColor="AliceBlue" Padding="16"
+    >
+
+    <StackLayout>
+        <Label Text="{Binding Message}" HorizontalOptions="Center" />
+        <Button Text="OK" Clicked="OK_Clicked" BackgroundColor="Transparent" />
+        <Button Text="Cancel" Clicked="Cancel_Clicked" BackgroundColor="Transparent" />
+    </StackLayout>
+
+</extra:DialogView>
